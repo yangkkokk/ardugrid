@@ -5,7 +5,7 @@ MercinatLabs / MERCINAT SARL France
 By: Thierry Brunet de Courssou
 http://www.mercinat.com
 Created 11 Oct 2011
-Last update: 29 Nov 2011
+Last update: 30 Nov 2011
 Project hosted at: http://code.google.com/p/ardugrid/ - Repository type: Subversion
 Version Control System: TortoiseSVN 1.7.1, Subversion 1.7.1, for Window7 64-bit - http://tortoisesvn.net/downloads.html
 
@@ -17,7 +17,7 @@ Hardware: Nanode v5 + Hoch Pulses Power Meter board using Analog ADE7755 IC
   -- Hoch board has been modified to get high frequency CF and to get REVP power sign
   -- REVP is routed through an additional opto isolator
 
-SW Arduino IDE RC2 for Windows at http://code.google.com/p/arduino/wiki/Arduino1
+SW Arduino 1.0 IDE for Windows at http://files.arduino.cc/downloads/arduino-1.0-windows.zip
 -- did not test with Arduino IDE 0022 or 0023
 
 Project summary
@@ -166,7 +166,7 @@ void setup()
   if (bPowerSign){ digitalWrite(6, 0);} else {digitalWrite(6, 1);}  // If Production, then LED 6 is illuminated. 
   
  Serial.begin(115200);
- Serial.println("\n\nArduGrid V1 - MercinatLabs (29 Nov 2011)");
+ Serial.println("\n\nArduGrid V1 - MercinatLabs (30 Nov 2011)");
   
   GetMac(); // get MAC adress from the Microchip 11AA02E48 located at the back of the Nanode board
   
